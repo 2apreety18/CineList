@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jda-BV-lv3">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="WPs-R8-blX">
+            <objects>
+                <tabBarController id="jda-BV-lv3" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8dN-zx-WHv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="wFZ-Gk-bAc" kind="relationship" relationship="viewControllers" id="Gvk-Kf-Nt1"/>
+                        <segue destination="hCl-BM-sdZ" kind="relationship" relationship="viewControllers" id="9hW-Fl-lMT"/>
+                        <segue destination="vLk-76-q1n" kind="relationship" relationship="viewControllers" id="a6V-8l-NWk"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D6G-2A-d0K" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-247" y="30"/>
+        </scene>
+        <!--Movies-->
+        <scene sceneID="wee-XC-jar">
+            <objects>
+                <navigationController id="wFZ-Gk-bAc" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Movies" id="aa3-ap-Cq7"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="W5x-h0-xXE">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="dhZ-WO-PFl" kind="relationship" relationship="rootViewController" id="CFz-6u-MOX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cGu-u3-ZkO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1200" y="801"/>
+        </scene>
+        <!--Movies-->
+        <scene sceneID="gH7-0N-W8q">
+            <objects>
+                <viewController storyboardIdentifier="MoviesViewController" id="dhZ-WO-PFl" customClass="MoviesViewController" customModule="CineList" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jcJ-La-Q8F">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="2EF-ps-NEK">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="8nO-Q1-l7v"/>
+                        <color key="backgroundColor" red="0.29411764705882354" green="0.96078431372549022" blue="0.93725490196078431" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="2EF-ps-NEK" firstAttribute="leading" secondItem="8nO-Q1-l7v" secondAttribute="leading" id="IaN-Wj-pEO"/>
+                            <constraint firstItem="2EF-ps-NEK" firstAttribute="trailing" secondItem="8nO-Q1-l7v" secondAttribute="trailing" id="OW5-qg-9Wh"/>
+                            <constraint firstItem="2EF-ps-NEK" firstAttribute="bottom" secondItem="8nO-Q1-l7v" secondAttribute="bottom" id="Q5b-bP-ZH3"/>
+                            <constraint firstItem="2EF-ps-NEK" firstAttribute="top" secondItem="8nO-Q1-l7v" secondAttribute="top" id="Z0J-57-2BR"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Movies" id="2KA-hh-5H7"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nTG-pt-B94" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1200" y="1506.6964285714284"/>
+        </scene>
+        <!--TV Shows-->
+        <scene sceneID="HSb-Np-G10">
+            <objects>
+                <navigationController id="hCl-BM-sdZ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="TV Shows" id="lAq-9R-Qi8"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="khu-G4-afj">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="HPc-dP-Bz4" kind="relationship" relationship="rootViewController" id="0CZ-Vb-4Qw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YVw-Xv-irQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-249" y="801"/>
+        </scene>
+        <!--Search-->
+        <scene sceneID="GIg-zU-FyX">
+            <objects>
+                <navigationController id="vLk-76-q1n" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Search" id="8mZ-KB-2ob"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="tkc-Eu-2bU">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="pc3-dQ-cKF" kind="relationship" relationship="rootViewController" id="wkW-kt-UbH"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cyO-Su-vHX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="699" y="801"/>
+        </scene>
+        <!--TV Shows-->
+        <scene sceneID="Eui-aN-x5A">
+            <objects>
+                <viewController id="HPc-dP-Bz4" customClass="TVShowsViewController" customModule="CineList" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YBr-RY-1ig">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="bix-gE-HX4"/>
+                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="TV Shows" id="1eU-GA-aCq"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ENO-3b-yct" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-249" y="1508"/>
+        </scene>
+        <!--Search-->
+        <scene sceneID="aBg-2v-WhN">
+            <objects>
+                <viewController id="pc3-dQ-cKF" customClass="SearchViewController" customModule="CineList" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VBD-uR-Fh9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Zeq-Li-Xyt"/>
+                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Search" id="eQR-L6-5fI"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yz9-Zw-8Wx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="699" y="1507"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="1080" height="1920"/>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
