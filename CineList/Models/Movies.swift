@@ -20,6 +20,7 @@ class Movies {
     var duration: String!
     var proCompany: String?
     var proCountry: String?
+    var language: String?
     var movieDB: MovieMDB?
     var movieDetail: MovieDetailedMDB?
     
@@ -36,6 +37,7 @@ class Movies {
         self.movieTitle = ref.movie.title
         self.movieDate = ref.movie.release_date
         self.movieSummary = ref.movie.overview
+        self.language = ref.movie.original_language
         var genre = ""
         if ref.detail.genres.count == 0 {
             genre = "N/A"

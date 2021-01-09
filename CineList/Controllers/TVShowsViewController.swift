@@ -11,7 +11,7 @@ import TMDBSwift
 
 class TVShowsViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource,UICollectionViewDelegateFlowLayout {
     
-    private var count = 0
+   // private var count = 0
     private var rowsCount = 0
     private var data: [TVMDB]!
     var tvData = [TVShows]()
@@ -72,14 +72,19 @@ class TVShowsViewController: UIViewController, UICollectionViewDelegate, UIColle
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         collectionView.deselectItem(at: indexPath, animated: true)
-        print("Section\(indexPath.section) and row\(indexPath.row)")
+        let vc = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "TVShowsDetailViewController") as! TVShowsDetailViewController
+        vc.selectedTVShow = self.tvData[indexPath.row]
+        //present(vc, animated: true, completion: nil)
+        self.navigationController?.pushViewController(vc, animated: true)
+        print("row\(indexPath.row)")
+        
     }
     
     
     func network() {
-        count += 1
+       // count += 1
         TMDBConfig.apikey = "ccb281446ad667986a85ae167de70e9c"
-        TVMDB.discoverTV(params: [.language("en"), .page(count)], completionHandler: {api, tvShow in
+        TVMDB.discoverTV(params: [.language("en"), .page(1)], completionHandler: {api, tvShow in
             //self.data = api
             if let tvShow = tvShow{
                 self.data = tvShow

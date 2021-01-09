@@ -20,14 +20,18 @@ class TVShows {
     var duration: String!
 //    var proCompany: String?
     var originCountry: String?
+    var seasons: String?
+    var episodes: String?
+    var language: String?
     var tvDB: TVMDB?
     var tvDetail: TVDetailedMDB?
     
-    init(TVTitle: String, TVDate: String, TVSummary: String, genre: String) {
+    init(TVTitle: String, TVDate: String, TVSummary: String, genre: String, duration: String) {
         self.TVTitle = TVTitle
         self.TVDate = TVDate
         self.TVSummary = TVSummary
         self.genre = genre
+        self.duration = duration
     }
     
     init(ref: (tvShows: TVMDB, detail: TVDetailedMDB)) {
@@ -36,6 +40,10 @@ class TVShows {
         self.TVTitle = ref.tvShows.name
         self.TVDate = ref.tvShows.first_air_date
         self.TVSummary = ref.tvShows.overview
+        self.language = ref.tvShows.original_language
+        self.seasons = String(ref.detail.number_of_seasons!)
+        self.episodes = String(ref.detail.number_of_episodes!)
+
         var genre = ""
         if ref.detail.genres.count == 0 {
             genre = "N/A"
@@ -47,7 +55,7 @@ class TVShows {
         self.genre = genre
         self.voteCount = String(Int(ref.tvShows.vote_count!))
         self.voteScore = String(ref.tvShows.vote_average!)
-//        //let largeNumber = ref.detail.revenue! - ref.detail.budget!
+//        let largeNumber = ref.detail.r! - ref.detail.budget!
 //        let numberFormatter = NumberFormatter()
 //        numberFormatter.numberStyle = .decimal
 //        let formattedNumber = numberFormatter.string(from: NSNumber(value:largeNumber))
@@ -57,15 +65,16 @@ class TVShows {
 //        } else {
 //            self.proCompany = ref.detail.production_companies?[0].name
 //        }
-//        if ref.detail.origin_country?[0].name == nil {
-//            self.proCountry = "N/A"
+//        if ref.detail.origin_country == nil {
+//            self.originCountry = "N/A"
 //        } else {
-//            self.proCountry = ref.detail.origin_country?[0].name?.uppercased()
+//            self.originCountry = ref.detail.origin_country?[0].name?.uppercased()
 //        }
-//        if ref.detail.runtime == nil {
+//        if ref.detail.episode_run_time == nil {
 //            self.duration = "N/A"
 //        } else {
-//            self.duration = String(ref.detail.runtime!)
+//            self.duration = String(ref.detail.episode_run_time!)
 //        }
+        
     }
 }

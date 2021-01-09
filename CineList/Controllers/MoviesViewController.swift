@@ -59,7 +59,7 @@ class MoviesViewController: UIViewController, UICollectionViewDelegate, UICollec
         //present(vc, animated: true, completion: nil)
         self.navigationController?.pushViewController(vc, animated: true)
 
-        print("row\(indexPath.row)")
+      //  print("row\(indexPath.row)")
     }
     
     

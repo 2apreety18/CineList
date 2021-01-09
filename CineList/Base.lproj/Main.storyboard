@@ -94,7 +94,7 @@
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Lion King" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="2fv-gW-fIt">
                                                 <rect key="frame" x="2" y="28" width="263" height="28"/>
-                                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="24"/>
+                                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="22"/>
                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zQw-CD-KZ0" userLabel="line">
@@ -111,20 +111,20 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="37" translatesAutoresizingMaskIntoConstraints="NO" id="8zi-cs-dEl" userLabel="1stPartStack">
-                                                <rect key="frame" x="8" y="91" width="254" height="26"/>
+                                                <rect key="frame" x="8" y="91" width="254" height="31"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="bpc-3r-JTY" userLabel="Relese Stack View">
-                                                        <rect key="frame" x="0.0" y="0.0" width="60" height="26"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="60" height="31"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RELESE DATE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="5" translatesAutoresizingMaskIntoConstraints="NO" id="wZQ-cZ-oz0">
-                                                                <rect key="frame" x="0.0" y="0.0" width="60" height="12"/>
-                                                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="10"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RELESE DATE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="wZQ-cZ-oz0">
+                                                                <rect key="frame" x="0.0" y="0.0" width="60" height="14.5"/>
+                                                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="12"/>
                                                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="253" text="2019-11-12" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="5" translatesAutoresizingMaskIntoConstraints="NO" id="PQj-0L-DzQ">
-                                                                <rect key="frame" x="0.0" y="14" width="60" height="12"/>
-                                                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="10"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="253" text="2019-11-12" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="PQj-0L-DzQ">
+                                                                <rect key="frame" x="0.0" y="16.5" width="60" height="14.5"/>
+                                                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="12"/>
                                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
@@ -140,17 +140,17 @@
                                                         </constraints>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="Sp8-Pz-Hi7" userLabel="Runtime Stack View">
-                                                        <rect key="frame" x="97" y="0.0" width="60" height="26"/>
+                                                        <rect key="frame" x="97" y="0.0" width="60" height="31"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="RUNTIME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="5" translatesAutoresizingMaskIntoConstraints="NO" id="9DU-vW-r3z">
-                                                                <rect key="frame" x="0.0" y="0.0" width="60" height="12"/>
-                                                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="10"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="60" height="14.5"/>
+                                                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="12"/>
                                                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="118" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="5" translatesAutoresizingMaskIntoConstraints="NO" id="keg-Oy-1n2">
-                                                                <rect key="frame" x="21.5" y="14" width="17" height="12"/>
-                                                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="10"/>
+                                                                <rect key="frame" x="20" y="16.5" width="20.5" height="14.5"/>
+                                                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="12"/>
                                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
@@ -163,17 +163,17 @@
                                                         </constraints>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="CX2-cE-dvg" userLabel="Language Stack View">
-                                                        <rect key="frame" x="194" y="0.0" width="60" height="26"/>
+                                                        <rect key="frame" x="194" y="0.0" width="60" height="31"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LANGUAGE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="5" translatesAutoresizingMaskIntoConstraints="NO" id="Su7-SW-djg">
-                                                                <rect key="frame" x="0.0" y="0.0" width="60" height="12"/>
-                                                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="10"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="60" height="14.5"/>
+                                                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="12"/>
                                                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="752" text="EN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="5" translatesAutoresizingMaskIntoConstraints="NO" id="1of-qY-NPQ">
-                                                                <rect key="frame" x="23.5" y="14" width="13" height="12"/>
-                                                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="10"/>
+                                                                <rect key="frame" x="22.5" y="16.5" width="15.5" height="14.5"/>
+                                                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="12"/>
                                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
@@ -188,19 +188,19 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="42" translatesAutoresizingMaskIntoConstraints="NO" id="zpP-RK-39b" userLabel="2ndPartStack">
-                                                <rect key="frame" x="8" y="133" width="254" height="26"/>
+                                                <rect key="frame" x="8" y="138" width="254" height="28.5"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="upB-Ty-mjH">
-                                                        <rect key="frame" x="0.0" y="0.0" width="56.5" height="26"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="56.5" height="28.5"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="RATING" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="5" translatesAutoresizingMaskIntoConstraints="NO" id="Czn-tt-tL2">
-                                                                <rect key="frame" x="10.5" y="0.0" width="36" height="12"/>
-                                                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="10"/>
+                                                                <rect key="frame" x="6.5" y="0.0" width="43.5" height="14.5"/>
+                                                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="12"/>
                                                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="5" translatesAutoresizingMaskIntoConstraints="NO" id="kD3-Oh-bOf">
-                                                                <rect key="frame" x="21.5" y="14" width="14" height="12"/>
+                                                                <rect key="frame" x="21.5" y="16.5" width="14" height="12"/>
                                                                 <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="10"/>
                                                                 <color key="textColor" systemColor="systemYellowColor"/>
                                                                 <nil key="highlightedColor"/>
@@ -208,16 +208,16 @@
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="r0y-Hp-X0o">
-                                                        <rect key="frame" x="98.5" y="0.0" width="57" height="26"/>
+                                                        <rect key="frame" x="98.5" y="0.0" width="57" height="28.5"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="REVENUE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="5" translatesAutoresizingMaskIntoConstraints="NO" id="wcg-Lc-8MB">
-                                                                <rect key="frame" x="7" y="0.0" width="43.5" height="12"/>
-                                                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="10"/>
+                                                                <rect key="frame" x="2.5" y="0.0" width="52.5" height="14.5"/>
+                                                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="12"/>
                                                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="100000000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="5" translatesAutoresizingMaskIntoConstraints="NO" id="0XZ-Sq-GwG">
-                                                                <rect key="frame" x="3.5" y="14" width="50.5" height="12"/>
+                                                                <rect key="frame" x="3.5" y="16.5" width="50.5" height="12"/>
                                                                 <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="10"/>
                                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
@@ -225,16 +225,16 @@
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="DCe-jA-DsE">
-                                                        <rect key="frame" x="197.5" y="0.0" width="56.5" height="26"/>
+                                                        <rect key="frame" x="197.5" y="0.0" width="56.5" height="28.5"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="COUNTRY" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="5" translatesAutoresizingMaskIntoConstraints="NO" id="SIp-RE-3Dw">
-                                                                <rect key="frame" x="4" y="0.0" width="48" height="12"/>
-                                                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="10"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="56.5" height="14.5"/>
+                                                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="12"/>
                                                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="US" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="5" translatesAutoresizingMaskIntoConstraints="NO" id="Rus-gM-4iq">
-                                                                <rect key="frame" x="21.5" y="14" width="13" height="12"/>
+                                                                <rect key="frame" x="21.5" y="16.5" width="13" height="12"/>
                                                                 <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="10"/>
                                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
@@ -244,7 +244,7 @@
                                                 </subviews>
                                             </stackView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="752" text="USD" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="5" translatesAutoresizingMaskIntoConstraints="NO" id="dnA-f8-ICC">
-                                                <rect key="frame" x="124.5" y="160" width="21" height="12"/>
+                                                <rect key="frame" x="124.5" y="167.5" width="21" height="12"/>
                                                 <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="10"/>
                                                 <color key="textColor" systemColor="systemGreenColor"/>
                                                 <nil key="highlightedColor"/>
@@ -290,7 +290,7 @@
                                                 <rect key="frame" x="8" y="26" width="362" height="312.5"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <string key="text">Simba idolises his father, King Mufasa, and takes to heart his own royal destiny. But not everyone in the kingdom celebrates the new cub's arrival. Scar, Mufasa's brother—and former heir to the throne—has plans of his own. The battle for Pride Rock is ravaged with betrayal, tragedy and drama, ultimately resulting in Simba's exile. With help from a curious pair of newfound friends, Simba will have to figure out how to grow up and take back what is rightfully his.</string>
-                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="textColor" systemColor="systemGrayColor"/>
                                                 <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="17"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
@@ -338,7 +338,16 @@
                     </view>
                     <navigationItem key="navigationItem" id="f3t-i8-1mw"/>
                     <connections>
+                        <outlet property="country" destination="Rus-gM-4iq" id="0we-0e-hb2"/>
+                        <outlet property="date" destination="PQj-0L-DzQ" id="hcr-j9-bGD"/>
+                        <outlet property="genreLabel" destination="Xsx-vz-a4s" id="172-VI-pPy"/>
+                        <outlet property="language" destination="1of-qY-NPQ" id="DoH-mV-yy6"/>
                         <outlet property="movieName" destination="2fv-gW-fIt" id="PEB-S6-0wt"/>
+                        <outlet property="movieOverview" destination="2Si-Zd-ism" id="wD5-SD-t5L"/>
+                        <outlet property="poster" destination="wao-zH-kO2" id="c6Q-Rg-VeW"/>
+                        <outlet property="ratingLabel" destination="kD3-Oh-bOf" id="bQb-Wh-Re6"/>
+                        <outlet property="revenue" destination="0XZ-Sq-GwG" id="lZQ-Ge-ahF"/>
+                        <outlet property="runTime" destination="keg-Oy-1n2" id="vdA-tJ-exg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eME-hZ-yyn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -411,10 +420,10 @@
             </objects>
             <point key="canvasLocation" x="699" y="1507"/>
         </scene>
-        <!--View Controller-->
+        <!--Shows Detail View Controller-->
         <scene sceneID="J6d-0F-Oxt">
             <objects>
-                <viewController id="qmK-gB-ctj" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TVShowsDetailViewController" id="qmK-gB-ctj" customClass="TVShowsDetailViewController" customModule="CineList" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Eqc-8e-6Xd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -434,7 +443,7 @@
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Lion King" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="YHI-2N-CSw">
                                                 <rect key="frame" x="2" y="28" width="263" height="28"/>
-                                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="24"/>
+                                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="22"/>
                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hJK-KK-pPk" userLabel="line">
@@ -451,20 +460,20 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="37" translatesAutoresizingMaskIntoConstraints="NO" id="cCa-dO-RH1" userLabel="1stPartStack">
-                                                <rect key="frame" x="8" y="91" width="254" height="26"/>
+                                                <rect key="frame" x="8" y="91" width="254" height="31"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="5KX-EM-V7a" userLabel="Relese Stack View">
-                                                        <rect key="frame" x="0.0" y="0.0" width="60" height="26"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="60" height="31"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RELESE DATE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="5" translatesAutoresizingMaskIntoConstraints="NO" id="hpd-7P-qNr">
-                                                                <rect key="frame" x="0.0" y="0.0" width="60" height="12"/>
-                                                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="10"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="60" height="14.5"/>
+                                                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="12"/>
                                                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="253" text="2019-11-12" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="5" translatesAutoresizingMaskIntoConstraints="NO" id="uZq-mD-Ky2">
-                                                                <rect key="frame" x="0.0" y="14" width="60" height="12"/>
-                                                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="10"/>
+                                                                <rect key="frame" x="0.0" y="16.5" width="60" height="14.5"/>
+                                                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="12"/>
                                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
@@ -480,17 +489,17 @@
                                                         </constraints>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="1wZ-jT-TQT" userLabel="Runtime Stack View">
-                                                        <rect key="frame" x="97" y="0.0" width="60" height="26"/>
+                                                        <rect key="frame" x="97" y="0.0" width="60" height="31"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="RUNTIME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="5" translatesAutoresizingMaskIntoConstraints="NO" id="9xO-5X-7aL">
-                                                                <rect key="frame" x="0.0" y="0.0" width="60" height="12"/>
-                                                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="10"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="60" height="14.5"/>
+                                                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="12"/>
                                                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="118" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="5" translatesAutoresizingMaskIntoConstraints="NO" id="XpY-0h-8Jq">
-                                                                <rect key="frame" x="21.5" y="14" width="17" height="12"/>
-                                                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="10"/>
+                                                                <rect key="frame" x="20" y="16.5" width="20.5" height="14.5"/>
+                                                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="12"/>
                                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
@@ -503,17 +512,17 @@
                                                         </constraints>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="hoi-fh-vNT" userLabel="Language Stack View">
-                                                        <rect key="frame" x="194" y="0.0" width="60" height="26"/>
+                                                        <rect key="frame" x="194" y="0.0" width="60" height="31"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LANGUAGE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="5" translatesAutoresizingMaskIntoConstraints="NO" id="hMa-y9-D6K">
-                                                                <rect key="frame" x="0.0" y="0.0" width="60" height="12"/>
-                                                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="10"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="60" height="14.5"/>
+                                                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="12"/>
                                                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="752" text="EN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="5" translatesAutoresizingMaskIntoConstraints="NO" id="cHU-aG-iDO">
-                                                                <rect key="frame" x="23.5" y="14" width="13" height="12"/>
-                                                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="10"/>
+                                                                <rect key="frame" x="22.5" y="16.5" width="15.5" height="14.5"/>
+                                                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="12"/>
                                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
@@ -528,54 +537,54 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="42" translatesAutoresizingMaskIntoConstraints="NO" id="938-Xt-cbn" userLabel="2ndPartStack">
-                                                <rect key="frame" x="8" y="133" width="254" height="26"/>
+                                                <rect key="frame" x="8" y="138" width="254" height="31"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="wGv-cv-6iH">
-                                                        <rect key="frame" x="0.0" y="0.0" width="56.5" height="26"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="56.5" height="31"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="RATING" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="5" translatesAutoresizingMaskIntoConstraints="NO" id="o1h-lK-gml">
-                                                                <rect key="frame" x="10.5" y="0.0" width="36" height="12"/>
-                                                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="10"/>
+                                                                <rect key="frame" x="6.5" y="0.0" width="44" height="14.5"/>
+                                                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="12"/>
                                                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="5" translatesAutoresizingMaskIntoConstraints="NO" id="48Y-WM-Xxk">
-                                                                <rect key="frame" x="21.5" y="14" width="14" height="12"/>
-                                                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="10"/>
+                                                                <rect key="frame" x="20" y="16.5" width="17" height="14.5"/>
+                                                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="12"/>
                                                                 <color key="textColor" systemColor="systemYellowColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="KaN-Mb-x9y">
-                                                        <rect key="frame" x="98.5" y="0.0" width="57" height="26"/>
+                                                        <rect key="frame" x="98.5" y="0.0" width="57" height="31"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="REVENUE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="5" translatesAutoresizingMaskIntoConstraints="NO" id="LX6-0Z-eYS">
-                                                                <rect key="frame" x="7" y="0.0" width="43.5" height="12"/>
-                                                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="10"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SEASONS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="5" translatesAutoresizingMaskIntoConstraints="NO" id="LX6-0Z-eYS">
+                                                                <rect key="frame" x="3" y="0.0" width="51.5" height="14.5"/>
+                                                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="12"/>
                                                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="100000000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="5" translatesAutoresizingMaskIntoConstraints="NO" id="ejZ-dQ-8YP">
-                                                                <rect key="frame" x="3.5" y="14" width="50.5" height="12"/>
-                                                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="10"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="5" translatesAutoresizingMaskIntoConstraints="NO" id="ejZ-dQ-8YP">
+                                                                <rect key="frame" x="22" y="16.5" width="13.5" height="14.5"/>
+                                                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="12"/>
                                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="I40-cA-QQm">
-                                                        <rect key="frame" x="197.5" y="0.0" width="56.5" height="26"/>
+                                                        <rect key="frame" x="197.5" y="0.0" width="56.5" height="31"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="COUNTRY" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="5" translatesAutoresizingMaskIntoConstraints="NO" id="Gue-7B-wq5">
-                                                                <rect key="frame" x="4" y="0.0" width="48" height="12"/>
-                                                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="10"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EPISODES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="5" translatesAutoresizingMaskIntoConstraints="NO" id="Gue-7B-wq5">
+                                                                <rect key="frame" x="1" y="0.0" width="54" height="14.5"/>
+                                                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="12"/>
                                                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="US" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="5" translatesAutoresizingMaskIntoConstraints="NO" id="8Z0-FA-bpf">
-                                                                <rect key="frame" x="21.5" y="14" width="13" height="12"/>
-                                                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="10"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="200" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="5" translatesAutoresizingMaskIntoConstraints="NO" id="8Z0-FA-bpf">
+                                                                <rect key="frame" x="18" y="16.5" width="20.5" height="14.5"/>
+                                                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="12"/>
                                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
@@ -583,12 +592,6 @@
                                                     </stackView>
                                                 </subviews>
                                             </stackView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="752" text="USD" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="5" translatesAutoresizingMaskIntoConstraints="NO" id="JYx-rx-8jL">
-                                                <rect key="frame" x="124.5" y="160" width="21" height="12"/>
-                                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="10"/>
-                                                <color key="textColor" systemColor="systemGreenColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
@@ -608,9 +611,7 @@
                                             <constraint firstItem="hJK-KK-pPk" firstAttribute="top" secondItem="YHI-2N-CSw" secondAttribute="bottom" constant="1" id="h31-7S-UZW"/>
                                             <constraint firstItem="Wvd-Rk-mQj" firstAttribute="leading" secondItem="IZ5-v7-aen" secondAttribute="leading" constant="2" id="ilx-Z9-FSB"/>
                                             <constraint firstAttribute="trailing" secondItem="hJK-KK-pPk" secondAttribute="trailing" id="nSF-uC-Q0u"/>
-                                            <constraint firstItem="JYx-rx-8jL" firstAttribute="top" secondItem="938-Xt-cbn" secondAttribute="bottom" constant="1" id="x97-CT-qNY"/>
                                             <constraint firstItem="cCa-dO-RH1" firstAttribute="top" secondItem="Wvd-Rk-mQj" secondAttribute="bottom" constant="10" id="xWl-X8-YJO"/>
-                                            <constraint firstItem="JYx-rx-8jL" firstAttribute="centerX" secondItem="938-Xt-cbn" secondAttribute="centerX" id="z77-gk-5Mn"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j3C-eN-mKh" userLabel="SummaryView">
@@ -630,7 +631,7 @@
                                                 <rect key="frame" x="8" y="26" width="362" height="312.5"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <string key="text">Simba idolises his father, King Mufasa, and takes to heart his own royal destiny. But not everyone in the kingdom celebrates the new cub's arrival. Scar, Mufasa's brother—and former heir to the throne—has plans of his own. The battle for Pride Rock is ravaged with betrayal, tragedy and drama, ultimately resulting in Simba's exile. With help from a curious pair of newfound friends, Simba will have to figure out how to grow up and take back what is rightfully his.</string>
-                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="textColor" systemColor="systemGrayColor"/>
                                                 <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="17"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
@@ -667,7 +668,7 @@
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="F8U-CD-hdc"/>
-                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
                         <constraints>
                             <constraint firstItem="mCN-Jp-wXM" firstAttribute="centerY" secondItem="Eqc-8e-6Xd" secondAttribute="centerY" constant="-11.5" id="BPb-pl-3W8"/>
                             <constraint firstItem="mCN-Jp-wXM" firstAttribute="leading" secondItem="F8U-CD-hdc" secondAttribute="leading" constant="10" id="IsK-am-wfE"/>
@@ -678,7 +679,16 @@
                     </view>
                     <navigationItem key="navigationItem" id="uUR-lw-X5k"/>
                     <connections>
-                        <outlet property="movieName" destination="YHI-2N-CSw" id="5bf-7Y-10n"/>
+                        <outlet property="date" destination="uZq-mD-Ky2" id="r2k-BZ-hSV"/>
+                        <outlet property="episodes" destination="8Z0-FA-bpf" id="sHB-eo-xmM"/>
+                        <outlet property="genreLabel" destination="Wvd-Rk-mQj" id="yke-fq-SOv"/>
+                        <outlet property="language" destination="cHU-aG-iDO" id="wZP-mX-R8I"/>
+                        <outlet property="overview" destination="wNq-vI-hb5" id="AHA-3M-jCm"/>
+                        <outlet property="poster" destination="yCq-Ga-5HH" id="igy-OG-dtL"/>
+                        <outlet property="ratingLabel" destination="48Y-WM-Xxk" id="cSA-3F-8tU"/>
+                        <outlet property="runTime" destination="XpY-0h-8Jq" id="326-Ap-67g"/>
+                        <outlet property="seasons" destination="ejZ-dQ-8YP" id="Vt8-vS-dkh"/>
+                        <outlet property="tvShowName" destination="YHI-2N-CSw" id="n4v-2i-dOb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ic2-Ci-OOD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -694,6 +704,9 @@
         </systemColor>
         <systemColor name="systemGray5Color">
             <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
