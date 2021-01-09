@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1933142437423D378A476585 /* Pods_CineList.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92FA1B0FF803366812FBE46C /* Pods_CineList.framework */; };
+		3E76F36625A8296900AE002E /* MovieDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E76F36525A8296900AE002E /* MovieDetailViewController.swift */; };
 		3EDA16CF25A7707500129B73 /* TVShows.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EDA16CE25A7707500129B73 /* TVShows.swift */; };
 		3EDA16D225A771BD00129B73 /* TVShowsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EDA16D125A771BD00129B73 /* TVShowsCollectionViewCell.swift */; };
 		3EE8145925A62FE5001435DE /* MoviesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE8145825A62FE5001435DE /* MoviesCollectionViewCell.swift */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3E76F36525A8296900AE002E /* MovieDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailViewController.swift; sourceTree = "<group>"; };
 		3EDA16CE25A7707500129B73 /* TVShows.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVShows.swift; sourceTree = "<group>"; };
 		3EDA16D125A771BD00129B73 /* TVShowsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVShowsCollectionViewCell.swift; sourceTree = "<group>"; };
 		3EE8145825A62FE5001435DE /* MoviesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 				3EEA9C0925A5F43100B12372 /* Models */,
 				3EE8145825A62FE5001435DE /* MoviesCollectionViewCell.swift */,
 				3EDA16D125A771BD00129B73 /* TVShowsCollectionViewCell.swift */,
+				3E76F36525A8296900AE002E /* MovieDetailViewController.swift */,
 			);
 			path = CineList;
 			sourceTree = "<group>";
@@ -245,6 +248,7 @@
 				3EEA9BDF25A5E73400B12372 /* AppDelegate.swift in Sources */,
 				3EEA9BE125A5E73400B12372 /* SceneDelegate.swift in Sources */,
 				3EEA9BF825A5ED8900B12372 /* MoviesViewController.swift in Sources */,
+				3E76F36625A8296900AE002E /* MovieDetailViewController.swift in Sources */,
 				3EDA16CF25A7707500129B73 /* TVShows.swift in Sources */,
 				3EE8145925A62FE5001435DE /* MoviesCollectionViewCell.swift in Sources */,
 				3EDA16D225A771BD00129B73 /* TVShowsCollectionViewCell.swift in Sources */,

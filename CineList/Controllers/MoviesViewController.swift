@@ -17,6 +17,7 @@ class MoviesViewController: UIViewController, UICollectionViewDelegate, UICollec
     var movieData = [Movies]()
     
     
+     
     private let collectionView = UICollectionView(
         frame: .zero,
         collectionViewLayout: UICollectionViewFlowLayout()
@@ -51,6 +52,20 @@ class MoviesViewController: UIViewController, UICollectionViewDelegate, UICollec
         return cell
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        collectionView.deselectItem(at: indexPath, animated: true)
+        let vc = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MovieDetailViewController") as! MovieDetailViewController
+        vc.selectedMovie = self.movieData[indexPath.row]
+        //present(vc, animated: true, completion: nil)
+        self.navigationController?.pushViewController(vc, animated: true)
+
+        print("row\(indexPath.row)")
+    }
+    
+    
+    
+    
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(
             width: (view.frame.size.width/2)-2,
@@ -70,11 +85,7 @@ class MoviesViewController: UIViewController, UICollectionViewDelegate, UICollec
         return UIEdgeInsets(top: 1, left: 1, bottom: 1, right: 1)
     }
     
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        collectionView.deselectItem(at: indexPath, animated: true)
-        print("Section\(indexPath.section) and row\(indexPath.row)")
-    }
-    
+   
     
     func network() {
         TMDBConfig.apikey = "ccb281446ad667986a85ae167de70e9c"
