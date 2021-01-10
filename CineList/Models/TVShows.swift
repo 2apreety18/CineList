@@ -18,7 +18,6 @@ class TVShows {
     var voteScore: String!
     var revenue: String!
     var duration: String!
-//    var proCompany: String?
     var originCountry: String?
     var seasons: String?
     var episodes: String?
@@ -55,26 +54,7 @@ class TVShows {
         self.genre = genre
         self.voteCount = String(Int(ref.tvShows.vote_count!))
         self.voteScore = String(ref.tvShows.vote_average!)
-//        let largeNumber = ref.detail.r! - ref.detail.budget!
-//        let numberFormatter = NumberFormatter()
-//        numberFormatter.numberStyle = .decimal
-//        let formattedNumber = numberFormatter.string(from: NSNumber(value:largeNumber))
-//        self.revenue = formattedNumber
-//        if ref.detail.production_companies?[0].name == nil {
-//            self.proCompany = "N/A"
-//        } else {
-//            self.proCompany = ref.detail.production_companies?[0].name
-//        }
-//        if ref.detail.origin_country == nil {
-//            self.originCountry = "N/A"
-//        } else {
-//            self.originCountry = ref.detail.origin_country?[0].name?.uppercased()
-//        }
-//        if ref.detail.episode_run_time == nil {
-//            self.duration = "N/A"
-//        } else {
-//            self.duration = String(ref.detail.episode_run_time!)
-//        }
+
         
     }
 }

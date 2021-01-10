@@ -9,6 +9,7 @@ target 'CineList' do
     pod "TMDBSwift"
     pod "SwiftyJSON"
     pod 'Kingfisher'
-    pod 'XCDYouTubeKit'
+    pod 'PaginatedTableView'
+    pod 'CLTypingLabel', '~> 0.4'
 
 end
