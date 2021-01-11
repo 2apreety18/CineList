@@ -29,7 +29,7 @@ class MovieDetailViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        view.backgroundColor = .systemGray
+        view.backgroundColor = #colorLiteral(red: 0.9995884299, green: 0.9897366166, blue: 0.5702303052, alpha: 1)
 //        view.tintColor = .black
 //
      

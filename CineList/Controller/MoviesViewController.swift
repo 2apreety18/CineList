@@ -13,11 +13,8 @@ class MoviesViewController: UIViewController, UICollectionViewDelegate, UICollec
     
     
     private var rowsCount = 0
-    private var data: [MovieMDB]!
-    var movieData = [Movies]()
-    
-    
-     
+    private let networkProvider = NetworkProvider()
+
     private let collectionView = UICollectionView(
         frame: .zero,
         collectionViewLayout: UICollectionViewFlowLayout()
@@ -30,13 +27,21 @@ class MoviesViewController: UIViewController, UICollectionViewDelegate, UICollec
         collectionView.delegate = self
         collectionView.dataSource = self
         view.addSubview(collectionView)
+        collectionView.backgroundView = nil;
+        collectionView.backgroundColor = #colorLiteral(red: 0.9995884299, green: 0.9897366166, blue: 0.5702303052, alpha: 1)
         
-        network()
     }
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         collectionView.frame = view.bounds
+        
+        networkProvider.fetchMovies()
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2.5) {
+            self.rowsCount = self.networkProvider.mData.count
+//            self.setup()
+            self.collectionView.reloadData()
+        }
     }
     
     
@@ -48,14 +53,14 @@ class MoviesViewController: UIViewController, UICollectionViewDelegate, UICollec
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: MoviesCollectionViewCell.identifier, for: indexPath) as! MoviesCollectionViewCell
-        cell.movie = self.movieData[indexPath.row]
+        cell.movie = self.networkProvider.movieData[indexPath.row]
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         collectionView.deselectItem(at: indexPath, animated: true)
         let vc = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MovieDetailViewController") as! MovieDetailViewController
-        vc.selectedMovie = self.movieData[indexPath.row]
+        vc.selectedMovie = self.networkProvider.movieData[indexPath.row]
         //present(vc, animated: true, completion: nil)
         self.navigationController?.pushViewController(vc, animated: true)
 
@@ -85,32 +90,6 @@ class MoviesViewController: UIViewController, UICollectionViewDelegate, UICollec
         return UIEdgeInsets(top: 1, left: 1, bottom: 1, right: 1)
     }
     
-   
-    
-    func network() {
-        TMDBConfig.apikey = "ccb281446ad667986a85ae167de70e9c"
-        MovieMDB.discoverMovies(params: [.language("en"), .page(1)], completion: {api, movie in
-            //self.data = api
-            if let movie = movie{
-                self.data = movie
-                DispatchQueue.main.async {
-                    for i in 0...self.data.count - 1{
-                        MovieMDB.movie(movieID: movie[i].id) { (api, movieDetail) in
-                            let temp = Movies(ref: (movie: movie[i], detail: movieDetail!))
-                            DispatchQueue.main.async {
-                                self.movieData.append(temp)
-                            }
-                        }
-                    }
-                }
-            }
-        })
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2.5) {
-            self.rowsCount = self.data.count
-//            self.setup()
-            self.collectionView.reloadData()
-        }
-    }
     
 }
 

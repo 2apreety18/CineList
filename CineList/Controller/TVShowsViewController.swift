@@ -11,10 +11,11 @@ import TMDBSwift
 
 class TVShowsViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource,UICollectionViewDelegateFlowLayout {
     
-   // private var count = 0
     private var rowsCount = 0
-    private var data: [TVMDB]!
-    var tvData = [TVShows]()
+    private let networkProvider = NetworkProvider()
+
+//    private var data: [TVMDB]!
+//    var tvData = [TVShows]()
     
     
     private let collectionView = UICollectionView(
@@ -25,17 +26,24 @@ class TVShowsViewController: UIViewController, UICollectionViewDelegate, UIColle
     // MARK: Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         collectionView.register(TVShowsCollectionViewCell.self, forCellWithReuseIdentifier: TVShowsCollectionViewCell.identifier)
         collectionView.delegate = self
         collectionView.dataSource = self
         view.addSubview(collectionView)
-        
-        network()
+        collectionView.backgroundView = nil;
+        collectionView.backgroundColor = #colorLiteral(red: 0.9995884299, green: 0.9897366166, blue: 0.5702303052, alpha: 1)
     }
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         collectionView.frame = view.bounds
+        
+        networkProvider.fetchTVShows()
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2.5) {
+            self.rowsCount = self.networkProvider.data.count
+            self.collectionView.reloadData()
+        }
     }
     
     
@@ -47,7 +55,7 @@ class TVShowsViewController: UIViewController, UICollectionViewDelegate, UIColle
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: TVShowsCollectionViewCell.identifier, for: indexPath) as! TVShowsCollectionViewCell
-        cell.tvShow = self.tvData[indexPath.row]
+        cell.tvShow = self.networkProvider.tvData[indexPath.row]
         return cell
     }
     
@@ -73,7 +81,7 @@ class TVShowsViewController: UIViewController, UICollectionViewDelegate, UIColle
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         collectionView.deselectItem(at: indexPath, animated: true)
         let vc = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "TVShowsDetailViewController") as! TVShowsDetailViewController
-        vc.selectedTVShow = self.tvData[indexPath.row]
+        vc.selectedTVShow = self.networkProvider.tvData[indexPath.row]
         //present(vc, animated: true, completion: nil)
         self.navigationController?.pushViewController(vc, animated: true)
         print("row\(indexPath.row)")
@@ -81,31 +89,31 @@ class TVShowsViewController: UIViewController, UICollectionViewDelegate, UIColle
     }
     
     
-    func network() {
-       // count += 1
-        TMDBConfig.apikey = "ccb281446ad667986a85ae167de70e9c"
-        TVMDB.discoverTV(params: [.language("en"), .page(1)], completionHandler: {api, tvShow in
-            //self.data = api
-            if let tvShow = tvShow{
-                self.data = tvShow
-                DispatchQueue.main.async {
-                    for i in 0...self.data.count - 1 {
-                        TVMDB.tv(tvShowID: tvShow[i].id, language: "en") { (api, tvDetail) in
-                            let temp = TVShows(ref: (tvShows: tvShow[i], detail: tvDetail!))
-                            DispatchQueue.main.async {
-                                self.tvData.append(temp)
-                            }
-                        }
-                    }
-                }
-            }
-        })
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2.5) {
-            self.rowsCount = self.data.count
-//            self.setup()
-            self.collectionView.reloadData()
-        }
-    }
+//    func network() {
+//       // count += 1
+//        TMDBConfig.apikey = "ccb281446ad667986a85ae167de70e9c"
+//        TVMDB.discoverTV(params: [.language("en"), .page(1)], completionHandler: {api, tvShow in
+//            //self.data = api
+//            if let tvShow = tvShow{
+//                self.data = tvShow
+//                DispatchQueue.main.async {
+//                    for i in 0...self.data.count - 1 {
+//                        TVMDB.tv(tvShowID: tvShow[i].id, language: "en") { (api, tvDetail) in
+//                            let temp = TVShows(ref: (tvShows: tvShow[i], detail: tvDetail!))
+//                            DispatchQueue.main.async {
+//                                self.tvData.append(temp)
+//                            }
+//                        }
+//                    }
+//                }
+//            }
+//        })
+//        DispatchQueue.main.asyncAfter(deadline: .now() + 2.5) {
+//            self.rowsCount = self.data.count
+////            self.setup()
+//            self.collectionView.reloadData()
+//        }
+//    }
     
 }
 
