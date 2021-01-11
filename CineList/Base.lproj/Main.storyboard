@@ -16,6 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
                         <segue destination="wFZ-Gk-bAc" kind="relationship" relationship="viewControllers" id="Gvk-Kf-Nt1"/>
@@ -31,10 +32,15 @@
         <scene sceneID="wee-XC-jar">
             <objects>
                 <navigationController id="wFZ-Gk-bAc" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Movies" id="aa3-ap-Cq7"/>
+                    <tabBarItem key="tabBarItem" title="Movies" image="film-clap-board" selectedImage="film-clap-board" id="aa3-ap-Cq7">
+                        <color key="badgeColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="W5x-h0-xXE">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="dhZ-WO-PFl" kind="relationship" relationship="rootViewController" id="CFz-6u-MOX"/>
@@ -347,10 +353,15 @@
         <scene sceneID="HSb-Np-G10">
             <objects>
                 <navigationController id="hCl-BM-sdZ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="TV Shows" id="lAq-9R-Qi8"/>
+                    <tabBarItem key="tabBarItem" title="TV Shows" image="monitor" selectedImage="monitor" id="lAq-9R-Qi8">
+                        <color key="badgeColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="khu-G4-afj">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="HPc-dP-Bz4" kind="relationship" relationship="rootViewController" id="0CZ-Vb-4Qw"/>
@@ -364,10 +375,15 @@
         <scene sceneID="GIg-zU-FyX">
             <objects>
                 <navigationController id="vLk-76-q1n" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Search" id="8mZ-KB-2ob"/>
+                    <tabBarItem key="tabBarItem" title="Search" image="magnifyingglass" catalog="system" selectedImage="magnifyingglass" id="8mZ-KB-2ob">
+                        <color key="badgeColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="tkc-Eu-2bU">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="E7s-Tn-TCg" kind="relationship" relationship="rootViewController" id="cn8-li-rYk"/>
@@ -495,7 +511,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="mMu-iK-kuD">
                         <nil key="title"/>
-                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="JgM-Sy-Wxm">
+                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="JgM-Sy-Wxm">
                             <rect key="frame" x="126.5" y="5.5" width="161" height="33"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <segments>
@@ -790,6 +806,9 @@
     </scenes>
     <resources>
         <image name="dzBtMocZuJbjLOXvrl4zGYigDzh-1" width="600" height="900"/>
+        <image name="film-clap-board" width="29" height="30"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
+        <image name="monitor" width="30" height="30"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

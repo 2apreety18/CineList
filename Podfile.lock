@@ -1,16 +1,12 @@
 PODS:
   - CLTypingLabel (0.4.0)
-  - Kingfisher (5.15.8):
-    - Kingfisher/Core (= 5.15.8)
-  - Kingfisher/Core (5.15.8)
-  - PaginatedTableView (1.0.1)
+  - Kingfisher (6.0.1)
   - SwiftyJSON (5.0.0)
   - TMDBSwift (0.5.1)
 
 DEPENDENCIES:
   - CLTypingLabel (~> 0.4)
   - Kingfisher
-  - PaginatedTableView
   - SwiftyJSON
   - TMDBSwift
 
@@ -18,17 +14,15 @@ SPEC REPOS:
   trunk:
     - CLTypingLabel
     - Kingfisher
-    - PaginatedTableView
     - SwiftyJSON
     - TMDBSwift
 
 SPEC CHECKSUMS:
   CLTypingLabel: 95a7d1faf7e3d1d952cd11cb0491d17d80c50934
-  Kingfisher: a3c03d702433fa6cfedabb2bddbe076fb8f2e902
-  PaginatedTableView: 294d9831d5ddf5c0dcfbb4a281d4fcfb8d12f55a
+  Kingfisher: adde87a4f74f6a3845395769354efff593581740
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
   TMDBSwift: 9220f3dcee23372c05b92f8c111f5f4c37185aee
 
-PODFILE CHECKSUM: 1e384c1b1ac5a79ec0e18c3fad35621d374a958c
+PODFILE CHECKSUM: efb79606cb9d3500946b46669206e7512d6e30df
 
 COCOAPODS: 1.10.0

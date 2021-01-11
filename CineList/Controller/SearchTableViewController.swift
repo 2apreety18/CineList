@@ -115,6 +115,28 @@ class SearchTableViewController: UITableViewController, UISearchBarDelegate {
         }
         return cell
     }
+    
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+            tableView.deselectRow(at: indexPath, animated: true)
+        if index == 0 {
+            let vc = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MovieDetailViewController") as! MovieDetailViewController
+            vc.selectedMovie = self.networkProvider.movieData[indexPath.row]
+            //present(vc, animated: true, completion: nil)
+            self.navigationController?.pushViewController(vc, animated: true)
+        } else {
+            let vc = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "TVShowsDetailViewController") as! TVShowsDetailViewController
+            vc.selectedTVShow = self.networkProvider.tvData[indexPath.row]
+            //present(vc, animated: true, completion: nil)
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+        
+    }
+    
+    
+    
+    
 
     var isSearchBarEmpty: Bool {
         return searchController.searchBar.text?.isEmpty ?? true
