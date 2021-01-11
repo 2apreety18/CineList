@@ -60,10 +60,19 @@ class TVShowsViewController: UIViewController, UICollectionViewDelegate, UIColle
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(
-            width: (view.frame.size.width/2)-2,
-            height: (view.frame.size.height/3)-2
-        )
+        if (UIDevice.current.userInterfaceIdiom == .pad){
+            // Ipad: 3 cells per row
+            return CGSize(
+                width: (view.frame.size.width/3)-3,
+                height: (view.frame.size.height/3)-3
+            )
+          } else {
+           // Iphone: 2 cells per row
+            return CGSize(
+                width: (view.frame.size.width/2)-2,
+                height: (view.frame.size.height/3)-2
+            )
+          }
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {

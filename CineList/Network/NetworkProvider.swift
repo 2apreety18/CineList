@@ -8,11 +8,8 @@
 import TMDBSwift
 import SwiftyJSON
 
-
-
 class NetworkProvider {
-    
-    
+
     var mData: [MovieMDB] = []
     var movieData : [Movies] = []
     
@@ -57,10 +54,6 @@ class NetworkProvider {
                 }
             }
         })
-    
     }
-    
-    
-    
    
 }
