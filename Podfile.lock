@@ -1,28 +1,24 @@
 PODS:
-  - CLTypingLabel (0.4.0)
   - Kingfisher (6.0.1)
   - SwiftyJSON (5.0.0)
   - TMDBSwift (0.5.1)
 
 DEPENDENCIES:
-  - CLTypingLabel (~> 0.4)
   - Kingfisher
   - SwiftyJSON
   - TMDBSwift
 
 SPEC REPOS:
   trunk:
-    - CLTypingLabel
     - Kingfisher
     - SwiftyJSON
     - TMDBSwift
 
 SPEC CHECKSUMS:
-  CLTypingLabel: 95a7d1faf7e3d1d952cd11cb0491d17d80c50934
   Kingfisher: adde87a4f74f6a3845395769354efff593581740
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
   TMDBSwift: 9220f3dcee23372c05b92f8c111f5f4c37185aee
 
-PODFILE CHECKSUM: efb79606cb9d3500946b46669206e7512d6e30df
+PODFILE CHECKSUM: b0a6b6b9f9c407f19463b52fdf4ecb6cf8f149b4
 
 COCOAPODS: 1.10.0

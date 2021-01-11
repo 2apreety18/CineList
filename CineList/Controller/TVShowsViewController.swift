@@ -98,31 +98,5 @@ class TVShowsViewController: UIViewController, UICollectionViewDelegate, UIColle
     }
     
     
-//    func network() {
-//       // count += 1
-//        TMDBConfig.apikey = "ccb281446ad667986a85ae167de70e9c"
-//        TVMDB.discoverTV(params: [.language("en"), .page(1)], completionHandler: {api, tvShow in
-//            //self.data = api
-//            if let tvShow = tvShow{
-//                self.data = tvShow
-//                DispatchQueue.main.async {
-//                    for i in 0...self.data.count - 1 {
-//                        TVMDB.tv(tvShowID: tvShow[i].id, language: "en") { (api, tvDetail) in
-//                            let temp = TVShows(ref: (tvShows: tvShow[i], detail: tvDetail!))
-//                            DispatchQueue.main.async {
-//                                self.tvData.append(temp)
-//                            }
-//                        }
-//                    }
-//                }
-//            }
-//        })
-//        DispatchQueue.main.asyncAfter(deadline: .now() + 2.5) {
-//            self.rowsCount = self.data.count
-////            self.setup()
-//            self.collectionView.reloadData()
-//        }
-//    }
-    
 }
 

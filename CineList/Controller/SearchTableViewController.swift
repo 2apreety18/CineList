@@ -110,7 +110,6 @@ class SearchTableViewController: UITableViewController, UISearchBarDelegate {
              cell.tvShow = self.filteredTVList[indexPath.row]
             } else {
                 cell.tvShow = self.networkProvider.tvData[indexPath.row]
-
             }
         }
         return cell
@@ -119,17 +118,30 @@ class SearchTableViewController: UITableViewController, UISearchBarDelegate {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-            tableView.deselectRow(at: indexPath, animated: true)
+        tableView.deselectRow(at: indexPath, animated: true)
         if index == 0 {
+            
             let vc = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MovieDetailViewController") as! MovieDetailViewController
-            vc.selectedMovie = self.networkProvider.movieData[indexPath.row]
-            //present(vc, animated: true, completion: nil)
-            self.navigationController?.pushViewController(vc, animated: true)
+            
+            if isFiltering {
+              vc.selectedMovie = filteredMovieList[indexPath.row]
+              self.navigationController?.pushViewController(vc, animated: true)
+            } else {
+                vc.selectedMovie = self.networkProvider.movieData[indexPath.row]
+                self.navigationController?.pushViewController(vc, animated: true)
+            }
+            
         } else {
             let vc = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "TVShowsDetailViewController") as! TVShowsDetailViewController
-            vc.selectedTVShow = self.networkProvider.tvData[indexPath.row]
-            //present(vc, animated: true, completion: nil)
-            self.navigationController?.pushViewController(vc, animated: true)
+            
+            if isFiltering {
+              vc.selectedTVShow = filteredTVList[indexPath.row]
+              self.navigationController?.pushViewController(vc, animated: true)
+            } else {
+                vc.selectedTVShow = self.networkProvider.tvData[indexPath.row]
+                self.navigationController?.pushViewController(vc, animated: true)
+            }
+            
         }
         
     }
@@ -144,16 +156,7 @@ class SearchTableViewController: UITableViewController, UISearchBarDelegate {
     var isFiltering: Bool {
         return searchController.isActive && !isSearchBarEmpty
     }
-    
 
-    
-//    func filterContentForSearchText(_ searchText: String, category: Movies? = nil) {
-//      filteredMovieList = movieData.filter { (movie: Movies) -> Bool in
-//        return movie.movieTitle.lowercased().contains(searchText.lowercased())
-//
-//      }
-//        self.tableView.reloadData()
-//    }
     
     
     func filterContentForSearchText(_ searchText: String, category: (Movies?, TVShows?)) {

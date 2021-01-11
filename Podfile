@@ -9,6 +9,4 @@ target 'CineList' do
     pod "TMDBSwift"
     pod "SwiftyJSON"
     pod 'Kingfisher'
-    pod 'CLTypingLabel', '~> 0.4'
-
 end
